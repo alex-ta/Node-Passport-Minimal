@@ -3,8 +3,6 @@ const express = require('express')
 const exphbs = require('express-handlebars')
 const middleware = require('./middleware')
 const app = express()
-const LocalStrategy = require('passport-local').Strategy
-
 const db = {
 	findUser:function (username, callback) {
 	  const user = {
